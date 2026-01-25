@@ -35,7 +35,7 @@ class Character {
             targetSpeed = 0;
             targetAnim = this.animations.get("jump");
         }
-        else if (this.game.keys["ShiftLeft"] && (this.game.keys["ArrowRight"] || this.game.keys["KeyD"])) {
+        else if (this.game.keys["ShiftLeft"]) {
             targetSpeed = 150;
             targetAnim = this.animations.get("run");
         }
