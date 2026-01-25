@@ -31,7 +31,7 @@ class Character {
             targetSpeed = 0;
             targetAnim = this.animations.get("attack");
         }
-        else if (this.game.keys["ArrowUp"]) {
+        else if (this.game.keys["ArrowUp"] || this.game.keys["KeyW"]) {
             targetSpeed = 0;
             targetAnim = this.animations.get("jump");
         }
