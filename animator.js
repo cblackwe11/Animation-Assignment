@@ -1,5 +1,6 @@
 class Animator {
-    constructor(spritesheet, xStart, yStart, width, height, frameCount, frameDuration, framePadding, loop = true, xOffset = 0) {
+    constructor(spritesheet, xStart, yStart, width, height, frameCount, frameDuration,
+                framePadding, loop = true, xOffset = 0) {
         Object.assign(this, { spritesheet, xStart, yStart, width, height, frameCount, frameDuration, framePadding, loop, xOffset});
         this.elapsedTime = 0;
         this.totalTime = frameCount * frameDuration;
